@@ -22,7 +22,6 @@ $Custom_Field = 'Subscribe';    // Name of the custom "Opt In" field during chec
 $Custom_Field_Value = 'yes';    // The value of the custom field that indicates the customer's agreement.
 
 $key = 'CHANGE THIS TEXT to your own datafeed keyphrase';
-$key = 'Beware, my son, the frumious Bandersnatch and shun the JubJub bird.';
 
 ////// END Configuration ///////
 
