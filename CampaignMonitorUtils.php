@@ -28,7 +28,7 @@ function subscribe_user_to_list($user, $api_key, $client_id, $list_id) {
   $result = $cm->subscriberAddWithCustomFields($user['email'],
    $user['email'], $user['first_name'] . ' ' . $user['last_name']);
 
-  ($result['Code'] == 0 or preg_match("/already subscribed/i", $result['Message'])) or 
+  ($result['Code'] == 0 or preg_match("/already subscribed/i", $result['Message']) or preg_match("/Email Address exists/i", $result['Message'])) or
 	 die("Unable to load call subscriberAddWithCustomFields()! " .
          "CampaignMonitor reported error:\n\tCode=" . $result['Code'] .
          "\n\tMsg=" . $result['Message'] . "\n");
